@@ -9,19 +9,22 @@ body{
 }
 
 .global{
-    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    min-height: 40vh;
 }
 
 .global > section,
 .global > header,
 .global > footer{
-    flex: 0 1 1100px;
+    flex: 0 1 900px;
+    border: 5px solid black;
 }
 
 #entete{
     background-color: var(--couleur-arriere-entete);
 }
-#acceuil{
+#accueil{
     background-color: var(--couleur-arriere-accueil);
 }
 #evenement{
