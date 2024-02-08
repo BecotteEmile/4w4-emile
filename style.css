@@ -25,6 +25,7 @@ Text Domain: Theme-emile
 body {
   display: flex;
   flex-direction: column;
+  font-family: "Prompt", sans-serif;
 }
 
 .global {
@@ -62,14 +63,12 @@ body {
 
 h1 {
   font-size: 4.375rem;
-  font-family: "Prompt", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
 h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
-  font-family: "Prompt", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
