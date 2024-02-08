@@ -10,13 +10,18 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: Theme-emile
 */
 :root {
-  --couleur-arriere-entete: #aaa;
-  --couleur-arriere-accueil: #0f0;
-  --couleur-arriere-evenement: #f00;
-  --couleur-arriere-galerie: #00f;
-  --couleur-arriere-footer: #191919;
-  --transparence-h1: 0.4;
-  --transparence-section: 0.4;
+  --couleur-arriere-entete: #ff9100;
+  --couleur-arriere-accueil: #fff;
+  --couleur-arriere-evenement: #0d93ee;
+  --couleur-arriere-galerie: #fff;
+  --couleur-arriere-footer: #3f3f3f;
+  --hauteur-padding: 3rem;
+  --largeur-padding: 1rem;
+  --transparence-h1: 0.5;
+  --transparence-h2: 0.75;
+  --transparence-h3: 0.7;
+  --transparence-section: 0.1;
+  --largeur-section: 1000px;
 }
 
 * {
@@ -39,9 +44,8 @@ body {
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 900px;
-  color: rgba(255, 255, 255, var(--transparence-h1));
-  padding: 3rem 1rem;
+  flex: 0 1 var(--largeur-section);
+  padding: var(--hauteur-padding) var(--largeur-padding);
   background-color: rgba(0, 0, 0, var(--transparence-section));
 }
 
@@ -72,13 +76,29 @@ footer {
 }
 
 h1 {
+  color: rgba(0, 0, 0, var(--transparence-h1));
   font-size: 4.375rem;
   font-weight: 600;
   font-style: normal;
 }
 
 h2 {
+  color: rgba(255, 255, 255, var(--transparence-h2));
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   font-weight: 500;
+  font-style: normal;
+}
+
+h3 {
+  color: rgba(0, 0, 0, var(--transparence-h3));
+  font-size: clamp(0.75rem, -1.5rem + 7.2vw, 3rem);
+  font-weight: 450;
+  font-style: normal;
+}
+
+h4 {
+  color: rgba(0, 0, 0, var(--transparence-h3));
+  font-size: clamp(0.75rem, -1.5rem + 7.2vw, 3rem);
+  font-weight: 450;
   font-style: normal;
 }
