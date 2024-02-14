@@ -1,14 +1,46 @@
 :root {
-    --couleur-arriere-entete : #ff9100;
-    --couleur-arriere-accueil : #fff;
-    --couleur-arriere-evenement : #0d93ee;
-    --couleur-arriere-galerie : #fff;
-    --couleur-arriere-footer : #3f3f3f;
+    // --couleur-arriere-entete : #ff9100;
+    // --couleur-arriere-accueil : #fff;
+    // --couleur-arriere-evenement : #0d93ee;
+    // --couleur-arriere-galerie : #fff;
+    // --couleur-arriere-footer : #3f3f3f;
+    // --transparence-h1: 0.5;
+    // --transparence-h2: 0.75;
+    // --transparence-h3: 0.7;
+    // --transparence-section: 0.1;
+
+    /*Calcul des teintes*/
+    --u1 : 37; // couleur initiale
+    --u2 : calc(var(--u1) + 180);//couleur complémentaire
+    --u3 : calc(var(--u2) - 30);//couleur analogue gauche
+    --u4 : calc(var(--u2) + 30);//couleur analogue droite
+    /*Calcul de la saturation*/
+    --s-arriere : 75%;
+    --s-avant : 100%;
+    /*Calcul de la luminosite*/
+    --l-arriere: 50%;
+    --l-avant: 30%;
+
+    // Couleur arriere plan - background color
+    --couleur-arriere-entete : hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+    --couleur-arriere-accueil : hsl(var(--u2), var(--s-arriere), var(--l-arriere));
+    --couleur-arriere-evenement : hsl(var(--u3), var(--s-arriere), var(--l-arriere));
+    --couleur-arriere-galerie : hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+    --couleur-arriere-footer : hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+
+    // Couleur avant plan - color
+    --couleur-avant-entete : hsl(var(--u1), var(--s-avant), var(--l-avant));
+    --couleur-avant-accueil : hsl(var(--u2), var(--s-avant), var(--l-avant));
+    --couleur-avant-evenement : hsl(var(--u3), var(--s-avant), var(--l-avant));
+    --couleur-avant-galerie : hsl(var(--u4), var(--s-avant), var(--l-avant));
+    --couleur-avant-footer : hsl(var(--u1), var(--s-avant), var(--l-avant));
+
+    // --transparence-h1: 0.5;
+    // --transparence-h2: 0.75;
+    // --transparence-h3: 0.7;
+    // --transparence-section: 0.1;
+
     --hauteur-padding: 3rem;
     --largeur-padding: 1rem;
-    --transparence-h1: 0.5;
-    --transparence-h2: 0.75;
-    --transparence-h3: 0.7;
-    --transparence-section: 0.1;
     --largeur-section: 1000px;
 }

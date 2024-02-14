@@ -10,17 +10,29 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: Theme-emile
 */
 :root {
-  --couleur-arriere-entete: #ff9100;
-  --couleur-arriere-accueil: #fff;
-  --couleur-arriere-evenement: #0d93ee;
-  --couleur-arriere-galerie: #fff;
-  --couleur-arriere-footer: #3f3f3f;
+  /*Calcul des teintes*/
+  --u1: 37;
+  --u2: calc(var(--u1) + 180);
+  --u3: calc(var(--u2) - 30);
+  --u4: calc(var(--u2) + 30);
+  /*Calcul de la saturation*/
+  --s-arriere: 75%;
+  --s-avant: 100%;
+  /*Calcul de la luminosite*/
+  --l-arriere: 50%;
+  --l-avant: 30%;
+  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-evenement: hsl(var(--u3), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  --couleur-avant-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
+  --couleur-avant-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
+  --couleur-avant-evenement: hsl(var(--u3), var(--s-avant), var(--l-avant));
+  --couleur-avant-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
+  --couleur-avant-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
   --hauteur-padding: 3rem;
   --largeur-padding: 1rem;
-  --transparence-h1: 0.5;
-  --transparence-h2: 0.75;
-  --transparence-h3: 0.7;
-  --transparence-section: 0.1;
   --largeur-section: 1000px;
 }
 
@@ -56,23 +68,27 @@ footer {
 
 #entete {
   background-color: var(--couleur-arriere-entete);
+  color: var(--couleur-avant-entete);
 }
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
+  color: var(--couleur-avant-accueil);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
+  color: var(--couleur-avant-evenement);
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-avant-galerie);
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--couleur-avant-footer);
 }
 
 h1 {
