@@ -33,12 +33,14 @@ footer{
 #entete{
     background-color: var(--couleur-arriere-entete);
     color: var(--couleur-avant-entete);
+    position: relative;
 }
 #accueil{
     background-color: var(--couleur-arriere-accueil);
     color: var(--couleur-avant-accueil);
 }
 #evenement{
+    position: relative;
     background-color: var(--couleur-arriere-evenement);
     color: var(--couleur-avant-evenement);
 }

@@ -69,6 +69,7 @@ footer {
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-avant-entete);
+  position: relative;
 }
 
 #accueil {
@@ -77,6 +78,7 @@ footer {
 }
 
 #evenement {
+  position: relative;
   background-color: var(--couleur-arriere-evenement);
   color: var(--couleur-avant-evenement);
 }
@@ -117,4 +119,46 @@ h4 {
   font-size: clamp(0.75rem, -1.5rem + 7.2vw, 3rem);
   font-weight: 450;
   font-style: normal;
+}
+
+.vague {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(120% + 1.3px);
+  height: 31px;
+  transform: rotateY(180deg);
+}
+
+.vague-entete {
+  top: 99%;
+}
+
+.vague-entete .shape-fill {
+  fill: var(--couleur-arriere-entete);
+}
+
+.vague-evenement1 {
+  top: -1%;
+}
+
+.vague-evenement1 .shape-fill {
+  fill: var(--couleur-arriere-accueil);
+}
+
+.vague-evenement2 {
+  top: 89%;
+}
+
+.vague-evenement2 .shape-fill {
+  fill: var(--couleur-arriere-galerie);
 }
