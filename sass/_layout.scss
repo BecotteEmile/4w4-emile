@@ -24,6 +24,15 @@ body{
     background-color: rgba(0, 0, 0, var(--transparence-section));
 }
 
+button{
+    font-size: var(--texte-taille-grand);
+    color: var(--couleur-boutton-texte);
+    background-color: var(--couleur-boutton);
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+
 
 #entete,
 footer{
@@ -35,10 +44,27 @@ footer{
     color: var(--couleur-avant-entete);
     position: relative;
 }
+
 #accueil{
     background-color: var(--couleur-arriere-accueil);
     color: var(--couleur-avant-accueil);
 }
+h2, #accueil p{
+    margin-bottom: 1rem;
+}
+#accueil p{
+    padding: 1rem;
+    border-radius: 3px;
+}
+#accueil .boite1{
+    background-color: var(--couleur-boite1);
+    color: var(--couleur-boite2);
+}
+#accueil .boite2{
+    background-color: var(--couleur-boite2);
+    color: var(--couleur-boite1);
+}
+
 #evenement{
     position: relative;
     // background-color: var(--couleur-arriere-accueil);

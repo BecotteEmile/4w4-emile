@@ -26,7 +26,21 @@ Text Domain: Theme-emile
   --couleur-arriere-evenement: hsl(var(--u1), 90%, 32%);
   --couleur-arriere-galerie: hsl(var(--u1), 90%, 27%);
   --couleur-arriere-footer: hsl(var(--u1), 90%, 47%);
-  --couleur-evenement: var(--couleur-arriere-evenement);
+  --couleur-boite1: hsl(var(--u1), 100%, 25%);
+  --couleur-boite2: hsl(var(--u1), 25%, 100%);
+  --couleur-boutton: hsl(var(--u2), 100%, 60%);
+  --couleur-boutton-texte: hsl(var(--u1), 100%, 30%);
+  --couleur-avant-entete: hsl(var(--u1), 100%, 30%);
+  --couleur-avant-accueil: hsl(var(--u1), 100%, 25%);
+  --couleur-avant-evenement: hsl(var(--u1), 100%, 20%);
+  --couleur-avant-galerie: hsl(var(--u1), 100%, 15%);
+  --couleur-avant-footer: hsl(var(--u1), 100%, 30%);
+  --texte-taille-titre: clamp(2.5rem, 0.625rem + 6vw, 4.375rem);
+  --texte-taille-tres-grand: clamp(2.25rem, 1rem + 4vw, 3.5rem);
+  --texte-taille-grand: clamp(1.25rem, 0.5rem + 2.4vw, 2rem);
+  --texte-taille-moyen: clamp(1.125rem, 0.75rem + 1.2vw, 1.5rem);
+  --texte-taille-petit: clamp(1rem, 0.75rem + 0.8vw, 1.25rem);
+  --texte-taille-tres-petit: clamp(0.75rem, 0.5rem + 0.8vw, 1rem);
   --hauteur-padding: 3rem;
   --largeur-padding: 1rem;
   --largeur-section: 1000px;
@@ -57,6 +71,15 @@ body {
   background-color: rgba(0, 0, 0, var(--transparence-section));
 }
 
+button {
+  font-size: var(--texte-taille-grand);
+  color: var(--couleur-boutton-texte);
+  background-color: var(--couleur-boutton);
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px black;
+}
+
 #entete,
 footer {
   min-height: 20vh;
@@ -71,6 +94,25 @@ footer {
 #accueil {
   background-color: var(--couleur-arriere-accueil);
   color: var(--couleur-avant-accueil);
+}
+
+h2, #accueil p {
+  margin-bottom: 1rem;
+}
+
+#accueil p {
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+#accueil .boite1 {
+  background-color: var(--couleur-boite1);
+  color: var(--couleur-boite2);
+}
+
+#accueil .boite2 {
+  background-color: var(--couleur-boite2);
+  color: var(--couleur-boite1);
 }
 
 #evenement {
@@ -90,7 +132,7 @@ footer {
 
 h1 {
   color: rgba(0, 0, 0, var(--transparence-h1));
-  font-size: 4.375rem;
+  font-size: var(--texte-taille-titre);
   font-weight: 600;
   font-style: normal;
   letter-spacing: 0px;
@@ -98,33 +140,33 @@ h1 {
 
 h2 {
   color: rgba(255, 255, 255, var(--transparence-h2));
-  font-size: clamp(2.25rem, 1rem + 4vw, 3.5rem);
+  font-size: var(--texte-taille-tres-grand);
   font-weight: 500;
   font-style: normal;
 }
 
 h3 {
   color: rgba(0, 0, 0, var(--transparence-h3));
-  font-size: clamp(1.25rem, 0.5rem + 2.4vw, 2rem);
+  font-size: var(--texte-taille-grand);
   font-weight: 450;
   font-style: normal;
 }
 
 h4 {
   color: rgba(0, 0, 0, var(--transparence-h3));
-  font-size: clamp(1.125rem, 0.75rem + 1.2vw, 1.5rem);
+  font-size: var(--texte-taille-moyen);
   font-weight: 425;
   font-style: normal;
 }
 
 h5 {
-  font-size: clamp(1rem, 0.75rem + 0.8vw, 1.25rem);
+  font-size: var(--texte-taille-petit);
   font-weight: 415;
   font-style: normal;
 }
 
 h6 {
-  font-size: clamp(0.75rem, 0.5rem + 0.8vw, 1rem);
+  font-size: var(--texte-taille-tres-petit);
   font-weight: 400;
   font-style: normal;
 }

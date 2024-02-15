@@ -35,8 +35,12 @@
         --couleur-arriere-galerie : hsl(var(--u1), 90%, 27%);
         --couleur-arriere-footer : hsl(var(--u1), 90%, 47%);
 
-        // Pour que la diagonale soit entièrement visible
-        --couleur-evenement : var(--couleur-arriere-evenement);
+        // Couleur boite
+        --couleur-boite1 : hsl(var(--u1), 100%, 25%);
+        --couleur-boite2 : hsl(var(--u1), 25%, 100%);
+
+        --couleur-boutton : hsl(var(--u2), 100%, 60%);
+        --couleur-boutton-texte : hsl(var(--u1), 100%, 30%);
     
     // Couleur avant plan - color
     // --couleur-avant-entete : hsl(var(--u1), var(--s-avant), var(--l-avant));
@@ -46,16 +50,23 @@
     // --couleur-avant-footer : hsl(var(--u1), var(--s-avant), var(--l-avant));
 
         // Couleur monochrome
-        // --couleur-avant-entete : hsl(var(--u2), 100%, 47%);
-        // --couleur-avant-accueil : hsl(var(--u2), 100%, 37%);
-        // --couleur-avant-evenement : hsl(var(--u2), 100%, 32%);
-        // --couleur-avant-galerie : hsl(var(--u2), 100%, 27%);
-        // --couleur-avant-footer : hsl(var(--u2), 100%, 47%);
+        --couleur-avant-entete : hsl(var(--u1), 100%, 30%);
+        --couleur-avant-accueil : hsl(var(--u1), 100%, 25%);
+        --couleur-avant-evenement : hsl(var(--u1), 100%, 20%);
+        --couleur-avant-galerie : hsl(var(--u1), 100%, 15%);
+        --couleur-avant-footer : hsl(var(--u1), 100%, 30%);
 
     // --transparence-h1: 0.5;
     // --transparence-h2: 0.75;
     // --transparence-h3: 0.7;
     // --transparence-section: 0.1;
+
+    --texte-taille-titre: clamp(2.5rem, 0.625rem + 6vw, 4.375rem);
+    --texte-taille-tres-grand: clamp(2.25rem, 1rem + 4vw, 3.5rem);
+    --texte-taille-grand: clamp(1.25rem, 0.5rem + 2.4vw, 2rem);
+    --texte-taille-moyen: clamp(1.125rem, 0.75rem + 1.2vw, 1.5rem);
+    --texte-taille-petit: clamp(1rem, 0.75rem + 0.8vw, 1.25rem);
+    --texte-taille-tres-petit: clamp(0.75rem, 0.5rem + 0.8vw, 1rem);
 
     --hauteur-padding: 3rem;
     --largeur-padding: 1rem;
