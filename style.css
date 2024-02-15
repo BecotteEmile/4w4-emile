@@ -21,16 +21,12 @@ Text Domain: Theme-emile
   /*Calcul de la luminosite*/
   --l-arriere: 50%;
   --l-avant: 30%;
-  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-evenement: hsl(var(--u3), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
-  --couleur-avant-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
-  --couleur-avant-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
-  --couleur-avant-evenement: hsl(var(--u3), var(--s-avant), var(--l-avant));
-  --couleur-avant-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
-  --couleur-avant-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
+  --couleur-arriere-entete: hsl(var(--u1), 90%, 47%);
+  --couleur-arriere-accueil: hsl(var(--u1), 90%, 37%);
+  --couleur-arriere-evenement: hsl(var(--u1), 90%, 32%);
+  --couleur-arriere-galerie: hsl(var(--u1), 90%, 27%);
+  --couleur-arriere-footer: hsl(var(--u1), 90%, 47%);
+  --couleur-evenement: var(--couleur-arriere-evenement);
   --hauteur-padding: 3rem;
   --largeur-padding: 1rem;
   --largeur-section: 1000px;
@@ -79,7 +75,6 @@ footer {
 
 #evenement {
   position: relative;
-  background-color: var(--couleur-arriere-evenement);
   color: var(--couleur-avant-evenement);
 }
 
@@ -98,26 +93,39 @@ h1 {
   font-size: 4.375rem;
   font-weight: 600;
   font-style: normal;
+  letter-spacing: 0px;
 }
 
 h2 {
   color: rgba(255, 255, 255, var(--transparence-h2));
-  font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+  font-size: clamp(2.25rem, 1rem + 4vw, 3.5rem);
   font-weight: 500;
   font-style: normal;
 }
 
 h3 {
   color: rgba(0, 0, 0, var(--transparence-h3));
-  font-size: clamp(0.75rem, -1.5rem + 7.2vw, 3rem);
+  font-size: clamp(1.25rem, 0.5rem + 2.4vw, 2rem);
   font-weight: 450;
   font-style: normal;
 }
 
 h4 {
   color: rgba(0, 0, 0, var(--transparence-h3));
-  font-size: clamp(0.75rem, -1.5rem + 7.2vw, 3rem);
-  font-weight: 450;
+  font-size: clamp(1.125rem, 0.75rem + 1.2vw, 1.5rem);
+  font-weight: 425;
+  font-style: normal;
+}
+
+h5 {
+  font-size: clamp(1rem, 0.75rem + 0.8vw, 1.25rem);
+  font-weight: 415;
+  font-style: normal;
+}
+
+h6 {
+  font-size: clamp(0.75rem, 0.5rem + 0.8vw, 1rem);
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -151,14 +159,17 @@ h4 {
   top: -1%;
 }
 
-.vague-evenement1 .shape-fill {
-  fill: var(--couleur-arriere-accueil);
+.diagonale {
+  position: relative;
+  background: linear-gradient(180deg, var(--couleur-arriere-accueil) 50%, var(--couleur-arriere-galerie) 50%);
+  z-index: 1;
 }
 
-.vague-evenement2 {
-  top: 89%;
-}
-
-.vague-evenement2 .shape-fill {
-  fill: var(--couleur-arriere-galerie);
+.diagonale::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: var(--couleur-arriere-evenement);
+  z-index: -1;
+  transform: skewY(-5deg);
 }

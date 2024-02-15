@@ -1,0 +1,18 @@
+.diagonale{
+    position: relative;
+    background: linear-gradient(180deg, var(--couleur-arriere-accueil) 50%, var(--couleur-arriere-galerie) 50%);
+    z-index: 1;
+}
+
+.diagonale::after{
+    position: absolute;
+    content: "";
+    // left: 0;
+    // right: 0;
+    // top: -20%;
+    // bottom: 20%;
+    inset: 0;
+    background-color: var(--couleur-arriere-evenement);
+    z-index: -1;
+    transform: skewY(-5deg);
+}
