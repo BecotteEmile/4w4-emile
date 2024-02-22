@@ -29,12 +29,12 @@ Text Domain: Theme-emile
   --couleur-arriere-diagonale: hsl(var(--u2), 90%, 32%);
   --couleur-boite1: hsl(var(--u1), 100%, 25%);
   --couleur-boite2: hsl(var(--u1), 25%, 100%);
-  --couleur-bouton1: hsl(var(--u2), 100%, 60%);
-  --couleur-bouton2: hsl(var(--u2), 100%, 60%);
-  --couleur-bouton1-hover: hsl(var(--u1), 100%, 60%);
-  --couleur-bouton2-hover: hsl(var(--u1), 100%, 60%);
-  --couleur-bouton-texte: hsl(var(--u1), 100%, 30%);
-  --couleur-bouton-texte-hover: hsl(var(--u2), 100%, 30%);
+  --couleur-bouton1: hsl(var(--u2), 100%, 73%);
+  --couleur-bouton2: hsl(var(--u2), 100%, 52%);
+  --couleur-bouton1-hover: hsl(var(--u1), 100%, 73%);
+  --couleur-bouton2-hover: hsl(var(--u1), 100%, 52%);
+  --couleur-bouton-texte: hsl(var(--u1), 100%, 54%);
+  --couleur-bouton-texte-hover: hsl(var(--u2), 100%, 54%);
   --couleur-avant-entete: hsl(var(--u1), 100%, 30%);
   --couleur-avant-accueil: hsl(var(--u1), 100%, 75%);
   --couleur-avant-evenement: hsl(var(--u1), 100%, 45%);
