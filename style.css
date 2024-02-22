@@ -20,9 +20,28 @@ Text Domain: Theme-emile
 a {
   font-size: var(--texte-taille-moyen);
   font-weight: bold;
-  color: var(--couleur-avant-galerie);
+  color: var(--couleur-arriere-diagonale);
+  transition: letter-spacing 1s, font-size 1s;
+}
+a:hover {
+  letter-spacing: 2px;
+  font-size: 1.5rem;
 }
 
+a img {
+  transition: height 1s, width 1s;
+}
+
+a img:hover {
+  height: 2.2rem;
+  width: 2.2rem;
+}
+
+@media screen and (max-width: 550px) {
+  .liens {
+    width: 100%;
+  }
+}
 :root {
   /*Calcul des teintes*/
   --u1:37;
@@ -202,9 +221,28 @@ h6 {
 a {
   font-size: var(--texte-taille-moyen);
   font-weight: bold;
-  color: var(--couleur-avant-galerie);
+  color: var(--couleur-arriere-diagonale);
+  transition: letter-spacing 1s, font-size 1s;
+}
+a:hover {
+  letter-spacing: 2px;
+  font-size: 1.5rem;
 }
 
+a img {
+  transition: height 1s, width 1s;
+}
+
+a img:hover {
+  height: 2.2rem;
+  width: 2.2rem;
+}
+
+@media screen and (max-width: 550px) {
+  .liens {
+    width: 100%;
+  }
+}
 button {
   font-size: var(--texte-taille-grand);
   color: var(--couleur-bouton-texte);
@@ -290,7 +328,7 @@ button:active {
 
 .vague-footer {
   position: absolute;
-  top: -10%;
+  top: -5%;
   left: 0;
   width: 100%;
   overflow: hidden;
