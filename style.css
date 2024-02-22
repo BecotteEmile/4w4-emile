@@ -109,6 +109,7 @@ footer {
 #accueil {
   background-color: var(--couleur-arriere-accueil);
   color: var(--couleur-avant-accueil);
+  padding-bottom: 1rem;
 }
 
 h2, #accueil p {
@@ -120,12 +121,12 @@ h2, #accueil p {
   border-radius: 3px;
 }
 
-#accueil .boite1 {
+.boite1 {
   background-color: var(--couleur-boite1);
   color: var(--couleur-boite2);
 }
 
-#accueil .boite2 {
+.boite2 {
   background-color: var(--couleur-boite2);
   color: var(--couleur-boite1);
 }
@@ -133,16 +134,20 @@ h2, #accueil p {
 #evenement {
   position: relative;
   color: var(--couleur-avant-evenement);
+  padding-top: 1rem;
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-avant-galerie);
+  padding-top: 1rem;
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-avant-footer);
+  position: relative;
+  padding-top: 3rem;
 }
 
 h1 {
@@ -234,6 +239,10 @@ button:active {
   background-size: 400px;
 }
 
+#entete h2 {
+  width: 50vw;
+}
+
 .vague {
   position: absolute;
   top: 0;
@@ -260,8 +269,17 @@ button:active {
   fill: var(--couleur-arriere-entete);
 }
 
-.vague-evenement1 {
-  top: -1%;
+.vague-footer {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.vague-footer .shape-fill {
+  fill: var(--couleur-arriere-galerie);
 }
 
 .diagonale {

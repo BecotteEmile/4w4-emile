@@ -24,15 +24,15 @@
 }
 
 
-.vague-evenement1{
-    top: -1%;
+.vague-footer{
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
 }
-// .vague-evenement1 .shape-fill {
-//     fill: var(--couleur-arriere-accueil);
-// }
-// .vague-evenement2{
-//     top: 89%;
-// }
-// .vague-evenement2 .shape-fill {
-//     fill: var(--couleur-arriere-galerie);
-// }
+
+.vague-footer .shape-fill{
+    fill: var(--couleur-arriere-galerie);
+}
