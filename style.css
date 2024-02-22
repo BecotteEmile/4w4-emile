@@ -36,9 +36,9 @@ Text Domain: Theme-emile
   --couleur-bouton-texte: hsl(var(--u1), 100%, 30%);
   --couleur-bouton-texte-hover: hsl(var(--u2), 100%, 30%);
   --couleur-avant-entete: hsl(var(--u1), 100%, 30%);
-  --couleur-avant-accueil: hsl(var(--u1), 100%, 25%);
-  --couleur-avant-evenement: hsl(var(--u1), 100%, 20%);
-  --couleur-avant-galerie: hsl(var(--u1), 100%, 15%);
+  --couleur-avant-accueil: hsl(var(--u1), 100%, 75%);
+  --couleur-avant-evenement: hsl(var(--u1), 100%, 45%);
+  --couleur-avant-galerie: hsl(var(--u1), 100%, 40%);
   --couleur-avant-footer: hsl(var(--u1), 100%, 30%);
   --texte-taille-titre: clamp(2.5rem, 0.625rem + 6vw, 4.375rem);
   --texte-taille-tres-grand: clamp(2.25rem, 1rem + 4vw, 3.5rem);
