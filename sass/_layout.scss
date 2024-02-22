@@ -19,7 +19,6 @@ body{
 .global > header,
 .global > footer{
     flex: 0 1 var(--largeur-section);
-    // border: 5px solid black;
     padding: var(--hauteur-padding) var(--largeur-padding);
     background-color: rgba(0, 0, 0, var(--transparence-section));
 }
@@ -62,7 +61,6 @@ h2, #accueil p{
 
 #evenement{
     position: relative;
-    // background-color: var(--couleur-arriere-accueil);
     color: var(--couleur-avant-evenement);
 }
 #galerie{

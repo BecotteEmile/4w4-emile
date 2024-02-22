@@ -7,10 +7,6 @@
 .diagonale::after{
     position: absolute;
     content: "";
-    // left: 0;
-    // right: 0;
-    // top: -20%;
-    // bottom: 20%;
     inset: 0;
     background-color: var(--couleur-arriere-diagonale);
     z-index: -1;
