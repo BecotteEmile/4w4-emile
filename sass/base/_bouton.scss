@@ -1,0 +1,15 @@
+button{
+    font-size: var(--texte-taille-grand);
+    color: var(--couleur-bouton-texte);
+    // background-color: var(--couleur-boutton);
+    background-image: linear-gradient(120deg, var(--couleur-bouton1), var(--couleur-bouton2));
+    padding: 12px 24px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    // transition: color 1s, background-image 1s;
+}
+
+button:hover{
+    background-image: linear-gradient(120deg, var(--couleur-bouton1-hover), var(--couleur-bouton2-hover));
+    color: var(--couleur-bouton-texte-hover);
+}

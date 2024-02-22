@@ -24,15 +24,9 @@ body{
     background-color: rgba(0, 0, 0, var(--transparence-section));
 }
 
-button{
-    font-size: var(--texte-taille-grand);
-    color: var(--couleur-boutton-texte);
-    background-color: var(--couleur-boutton);
-    padding: 0.5rem;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px black;
+.global > header{
+    flex: 1;
 }
-
 
 #entete,
 footer{
@@ -43,6 +37,7 @@ footer{
     background-color: var(--couleur-arriere-entete);
     color: var(--couleur-avant-entete);
     position: relative;
+    min-height: 80vh;
 }
 
 #accueil{

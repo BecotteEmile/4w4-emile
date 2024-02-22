@@ -1,19 +1,11 @@
 :root {
-    // --couleur-arriere-entete : #ff9100;
-    // --couleur-arriere-accueil : #fff;
-    // --couleur-arriere-evenement : #0d93ee;
-    // --couleur-arriere-galerie : #fff;
-    // --couleur-arriere-footer : #3f3f3f;
-    // --transparence-h1: 0.5;
-    // --transparence-h2: 0.75;
-    // --transparence-h3: 0.7;
-    // --transparence-section: 0.1;
 
     /*Calcul des teintes*/
-    --u1 : 37; // couleur initiale
+    --u1 :37; // couleur initiale
     --u2 : calc(var(--u1) + 180);//couleur complémentaire
     --u3 : calc(var(--u2) - 30);//couleur analogue gauche
     --u4 : calc(var(--u2) + 30);//couleur analogue droite
+
     /*Calcul de la saturation*/
     --s-arriere : 75%;
     --s-avant : 100%;
@@ -34,13 +26,22 @@
         --couleur-arriere-evenement : hsl(var(--u1), 90%, 32%);
         --couleur-arriere-galerie : hsl(var(--u1), 90%, 27%);
         --couleur-arriere-footer : hsl(var(--u1), 90%, 47%);
+        
+        --couleur-arriere-diagonale : hsl(var(--u2), 90%, 32%);
 
         // Couleur boite
         --couleur-boite1 : hsl(var(--u1), 100%, 25%);
         --couleur-boite2 : hsl(var(--u1), 25%, 100%);
 
-        --couleur-boutton : hsl(var(--u2), 100%, 60%);
-        --couleur-boutton-texte : hsl(var(--u1), 100%, 30%);
+
+        --couleur-bouton1 : hsl(var(--u2), 100%, 60%);
+        --couleur-bouton2 : hsl(var(--u2), 100%, 60%);
+
+        --couleur-bouton1-hover : hsl(var(--u1), 100%, 60%);
+        --couleur-bouton2-hover : hsl(var(--u1), 100%, 60%);
+
+        --couleur-bouton-texte : hsl(var(--u1), 100%, 30%);
+        --couleur-bouton-texte-hover : hsl(var(--u2), 100%, 30%);
     
     // Couleur avant plan - color
     // --couleur-avant-entete : hsl(var(--u1), var(--s-avant), var(--l-avant));
@@ -56,11 +57,6 @@
         --couleur-avant-galerie : hsl(var(--u1), 100%, 15%);
         --couleur-avant-footer : hsl(var(--u1), 100%, 30%);
 
-    // --transparence-h1: 0.5;
-    // --transparence-h2: 0.75;
-    // --transparence-h3: 0.7;
-    // --transparence-section: 0.1;
-
     --texte-taille-titre: clamp(2.5rem, 0.625rem + 6vw, 4.375rem);
     --texte-taille-tres-grand: clamp(2.25rem, 1rem + 4vw, 3.5rem);
     --texte-taille-grand: clamp(1.25rem, 0.5rem + 2.4vw, 2rem);
@@ -70,5 +66,5 @@
 
     --hauteur-padding: 3rem;
     --largeur-padding: 1rem;
-    --largeur-section: 1000px;
+    --largeur-section: 1100px;
 }
