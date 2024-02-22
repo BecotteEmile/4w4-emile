@@ -9,6 +9,20 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: Theme-emile
 */
+.liens {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  font-size: var(--texte-taille-moyen);
+  font-weight: bold;
+  color: var(--couleur-avant-galerie);
+}
+
 :root {
   /*Calcul des teintes*/
   --u1:37;
@@ -172,6 +186,20 @@ h6 {
   font-style: normal;
 }
 
+.liens {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  font-size: var(--texte-taille-moyen);
+  font-weight: bold;
+  color: var(--couleur-avant-galerie);
+}
+
 button {
   font-size: var(--texte-taille-grand);
   color: var(--couleur-bouton-texte);
@@ -246,6 +274,8 @@ button:active {
   position: absolute;
   content: "";
   inset: 0;
+  top: -10%;
+  bottom: -2%;
   background-color: var(--couleur-arriere-diagonale);
   z-index: -1;
   transform: skewY(-5deg);

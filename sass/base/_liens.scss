@@ -1,0 +1,13 @@
+.liens{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a{
+    font-size: var(--texte-taille-moyen);
+    font-weight: bold;
+    color: var(--couleur-avant-galerie);
+}
