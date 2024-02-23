@@ -23,15 +23,19 @@ a {
   color: var(--couleur-arriere-diagonale);
   transition: letter-spacing 1s, font-size 1s;
 }
-a:hover {
+a:focus, a:hover {
   letter-spacing: 2px;
   font-size: 1.5rem;
+}
+a:visited {
+  color: var(--couleur-avant-Galerie);
 }
 
 a img {
   transition: height 1s, width 1s;
 }
 
+a img:focus,
 a img:hover {
   height: 2.2rem;
   width: 2.2rem;
@@ -224,15 +228,19 @@ a {
   color: var(--couleur-arriere-diagonale);
   transition: letter-spacing 1s, font-size 1s;
 }
-a:hover {
+a:focus, a:hover {
   letter-spacing: 2px;
   font-size: 1.5rem;
+}
+a:visited {
+  color: var(--couleur-avant-Galerie);
 }
 
 a img {
   transition: height 1s, width 1s;
 }
 
+a img:focus,
 a img:hover {
   height: 2.2rem;
   width: 2.2rem;
