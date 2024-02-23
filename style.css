@@ -28,7 +28,7 @@ a:focus, a:hover {
   font-size: 1.5rem;
 }
 a:visited {
-  color: var(--couleur-avant-Galerie);
+  color: var(--couleur-avant-galerie);
 }
 
 a img {
@@ -233,7 +233,7 @@ a:focus, a:hover {
   font-size: 1.5rem;
 }
 a:visited {
-  color: var(--couleur-avant-Galerie);
+  color: var(--couleur-avant-galerie);
 }
 
 a img {
