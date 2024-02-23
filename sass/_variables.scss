@@ -3,15 +3,15 @@
     /*Calcul des teintes*/
     --u1 :37; // couleur initiale
     --u2 : calc(var(--u1) + 180);//couleur complémentaire
-    --u3 : calc(var(--u2) - 30);//couleur analogue gauche
-    --u4 : calc(var(--u2) + 30);//couleur analogue droite
+    // --u3 : calc(var(--u2) - 30);//couleur analogue gauche
+    // --u4 : calc(var(--u2) + 30);//couleur analogue droite
 
-    /*Calcul de la saturation*/
-    --s-arriere : 75%;
-    --s-avant : 100%;
-    /*Calcul de la luminosite*/
-    --l-arriere: 50%;
-    --l-avant: 30%;
+    // /*Calcul de la saturation*/
+    // --s-arriere : 75%;
+    // --s-avant : 100%;
+    // /*Calcul de la luminosite*/
+    // --l-arriere: 50%;
+    // --l-avant: 30%;
     
     //  Couleur Monochrome
         --couleur-arriere-entete : hsl(var(--u1), 90%, 47%);

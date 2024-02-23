@@ -50,14 +50,6 @@ a img:hover {
   /*Calcul des teintes*/
   --u1:37;
   --u2: calc(var(--u1) + 180);
-  --u3: calc(var(--u2) - 30);
-  --u4: calc(var(--u2) + 30);
-  /*Calcul de la saturation*/
-  --s-arriere: 75%;
-  --s-avant: 100%;
-  /*Calcul de la luminosite*/
-  --l-arriere: 50%;
-  --l-avant: 30%;
   --couleur-arriere-entete: hsl(var(--u1), 90%, 47%);
   --couleur-arriere-accueil: hsl(var(--u1), 90%, 37%);
   --couleur-arriere-evenement: hsl(var(--u1), 90%, 32%);
