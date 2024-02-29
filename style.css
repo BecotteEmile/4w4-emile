@@ -359,8 +359,10 @@ button:active {
 .cours {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-around;
   gap: 1rem;
+  align-items: flex-start;
+  flex-direction: row;
 }
 
 .carte {
@@ -369,4 +371,9 @@ button:active {
   justify-content: space-between;
   flex: 0 1 20%;
   border: 1px solid red;
+}
+
+#accueil .info-carte p {
+  margin: 0rem;
+  padding: 0.1rem;
 }
