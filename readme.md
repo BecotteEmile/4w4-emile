@@ -1,7 +1,9 @@
-# Page github: https://becotteemile.github.io/4w4-emile/
 
 # Labo #3
-## Création d'un site WP.
+## Nom auteur: Émile Bécotte
+## Page github: https://becotteemile.github.io/4w4-emile/
+
+## Objectif: Création d'un site WP.
 - Adaptation du thème de exercice #1
 - Création du modèle index.php
 - Création de la branche labo3
