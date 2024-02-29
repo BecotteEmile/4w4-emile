@@ -370,7 +370,6 @@ button:active {
   flex-direction: column;
   justify-content: space-between;
   flex: 0 1 20%;
-  border: 1px solid red;
 }
 
 #accueil .info-carte p {
