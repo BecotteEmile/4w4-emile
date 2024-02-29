@@ -2,6 +2,13 @@
 # Labo #3
 ## Nom auteur: Émile Bécotte
 ## Page github: https://becotteemile.github.io/4w4-emile/
+## Realisations:
+- Adaptation du thème de exercice #1
+- Création du modèle index.php
+- Création de la branche labo3
+- Read me
+- decomposition du titre
+- limitation contenu
 
 ## Objectif: Création d'un site WP.
 - Adaptation du thème de exercice #1
