@@ -41,13 +41,20 @@
                         while (have_posts()) : the_post();
                         $titre = get_the_title();
                         $sigle = substr($titre,0,7);
-                        $duree = substr($titre,0,7);
-                        $titreMontre;
-                        // strpos
+
+                        $positionDureeDebut = strpos($titre, '(') + 1;
+                        $positionDureeFin = strpos($titre, ')') - 1;
+                        $duree = substr($titre, $positionDureeDebut, ($positionDureeFin - $positionDureeDebut + 1));
+                        $titreMontre = substr($titre, 7, ($positionDureeDebut -9))
                         ?>
+
                         <div class="carte">
-                            <p><?= $sigle; ?></p>
-                            <p><?= $titre; ?></p>
+                            <div class="info-carte">
+                                <p><?= $sigle; ?></p>
+                                <p><?= $titreMontre; ?></p> 
+                                <p><?= $duree; ?></p>
+                            </div>
+                            
                             <p><?php echo wp_trim_words(get_the_content(), 30); ?></p>
                         </div>
                         <?php endwhile; ?>
