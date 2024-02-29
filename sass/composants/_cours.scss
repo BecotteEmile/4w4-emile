@@ -12,6 +12,14 @@
     flex-direction: column;
     justify-content: space-between;
     flex: 0 1 20%;
+    min-height: 60vh;
+    border-radius: 5px;
+    background-color: var(--couleur-boite1);
+    color: var(--couleur-boite2);
+}
+
+#accueil .info-carte{
+    padding: 1rem;
 }
 
 #accueil .info-carte p{
