@@ -12,7 +12,6 @@ body{
 .global{
     display: flex;
     justify-content: center;
-    min-height: 40vh;
 }
 
 .global > section,
@@ -23,12 +22,15 @@ body{
     background-color: rgba(0, 0, 0, var(--transparence-section));
 }
 
-.global > header{
+#entete, #footer{
+    min-height: 20vh;
+}
+
+.global > .hero{
     flex: 1;
 }
 
-#entete,
-footer{
+#entete, #footer{
     min-height: 20vh;
 }
 

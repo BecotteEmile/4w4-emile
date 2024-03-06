@@ -56,8 +56,6 @@ a img:hover {
   --couleur-arriere-galerie: hsl(var(--u1), 90%, 27%);
   --couleur-arriere-footer: hsl(var(--u1), 90%, 47%);
   --couleur-arriere-diagonale: hsl(var(--u2), 90%, 32%);
-  --couleur-boite1: hsl(var(--u1), 100%, 25%);
-  --couleur-boite2: hsl(var(--u1), 25%, 100%);
   --couleur-bouton1: hsl(var(--u2), 100%, 73%);
   --couleur-bouton2: hsl(var(--u2), 100%, 52%);
   --couleur-bouton1-hover: hsl(var(--u1), 100%, 73%);
@@ -80,6 +78,12 @@ a img:hover {
   --largeur-section: 1100px;
 }
 
+.carte {
+  --_couleur-arriere: hsl(var(--u1),100%, 85% );
+  --couleur-boite1: hsl(var(--u1), 100%, 25%);
+  --couleur-boite2: hsl(var(--u1), 25%, 100%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -94,7 +98,6 @@ body {
 .global {
   display: flex;
   justify-content: center;
-  min-height: 40vh;
 }
 
 .global > section,
@@ -105,12 +108,15 @@ body {
   background-color: rgba(0, 0, 0, var(--transparence-section));
 }
 
-.global > header {
+#entete, #footer {
+  min-height: 20vh;
+}
+
+.global > .hero {
   flex: 1;
 }
 
-#entete,
-footer {
+#entete, #footer {
   min-height: 20vh;
 }
 
@@ -300,6 +306,9 @@ button:active {
     min-height: 50vh;
   }
 }
+/******************************************************************************/
+/*effet*/
+/******************************************************************************/
 .vague {
   position: absolute;
   top: 0;
@@ -356,6 +365,9 @@ button:active {
   transform: skewY(-5deg);
 }
 
+/******************************************************************************/
+/*Composants*/
+/******************************************************************************/
 .cours {
   display: flex;
   flex-wrap: wrap;
@@ -369,11 +381,11 @@ button:active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 0 1 20%;
-  min-height: 60vh;
+  flex: 1 0 220px;
   border-radius: 5px;
   background-color: var(--couleur-boite1);
   color: var(--couleur-boite2);
+  padding: 0.5rem;
 }
 
 #accueil .info-carte {
@@ -383,4 +395,22 @@ button:active {
 #accueil .info-carte p {
   margin: 0rem;
   padding: 0.1rem;
+}
+
+/*
+    Feuille de style du menu principal
+*/
+.menu-principal-container {
+  background-color: black;
+}
+.menu-principal-container .menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu-principal-container .menu-item {
+  flex: 0 0 50px;
+}
+.menu-principal-container .menu-item a {
+  color: #fff;
 }

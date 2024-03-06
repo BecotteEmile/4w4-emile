@@ -11,13 +11,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="menu" class="global">
+        <header class="menu__header">
+            <?php wp_nav_menu(array("container" => "nav")) ?>
+        </header>
+    </div>
     <div id="entete" class="global">
-        <header class="entete_header">
+        <section class="entete_header hero">
             <h1>Thème du groupe 1 (h1)</h1>
             <h2>4W4-Conception d'interface et développement Web</h2>
             <h3>Tim - Collège de maisonneuve</h3>
             <button>Événement</button>
-        </header>
+        </section>
         <div class="vague vague-entete">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
@@ -42,17 +47,17 @@
                         $titre = get_the_title();
                         $sigle = substr($titre,0,7);
 
-                        $positionDureeDebut = strpos($titre, '(') + 1;
-                        $positionDureeFin = strpos($titre, ')') - 1;
-                        $duree = substr($titre, $positionDureeDebut, ($positionDureeFin - $positionDureeDebut + 1));
-                        $titreMontre = substr($titre, 7, ($positionDureeDebut -9))
+                        $positionDureeDebut = strpos($titre, '(');
+                        $positionDureeFin = strpos($titre, ')');
+                        $duree = substr($titre, $positionDureeDebut+1, -1);
+                        $titreMontre = substr($titre, 7, $positionDureeDebut -7);
                         ?>
 
                         <div class="carte">
                             <div class="info-carte">
-                                <p><?= $sigle; ?></p>
-                                <p><?= $titreMontre; ?></p> 
-                                <p><?= $duree; ?></p>
+                                <h4><?= $sigle; ?></h4>
+                                <h3><?= $titreMontre; ?></h3> 
+                                <h5><?= $duree; ?></h5>
                             </div>
                             
                             <p><?php echo wp_trim_words(get_the_content(), 30); ?></p>

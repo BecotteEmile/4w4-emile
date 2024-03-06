@@ -22,10 +22,6 @@
         
         --couleur-arriere-diagonale : hsl(var(--u2), 90%, 32%);
 
-        // Couleur boite
-        --couleur-boite1 : hsl(var(--u1), 100%, 25%);
-        --couleur-boite2 : hsl(var(--u1), 25%, 100%);
-
 
         --couleur-bouton1 : hsl(var(--u2), 100%, 73%);
         --couleur-bouton2 : hsl(var(--u2), 100%, 52%);
@@ -53,4 +49,11 @@
     --hauteur-padding: 3rem;
     --largeur-padding: 1rem;
     --largeur-section: 1100px;
+}
+
+.carte{
+    --_couleur-arriere: hsl(var(--u1),100%, 85% );
+    // Couleur boite
+    --couleur-boite1 : hsl(var(--u1), 100%, 25%);
+    --couleur-boite2 : hsl(var(--u1), 25%, 100%);
 }

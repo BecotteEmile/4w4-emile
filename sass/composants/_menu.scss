@@ -1,0 +1,21 @@
+/*
+    Feuille de style du menu principal
+*/
+
+.menu-principal-container{
+    background-color: black;
+    .menu{//ul
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu-item {//li
+        flex: 0 0 50px;
+
+    }
+
+    .menu-item a {//li a
+        color: #fff;
+    }
+}
