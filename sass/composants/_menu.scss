@@ -4,18 +4,22 @@
 
 .menu-principal-container{
     background-color: black;
+    width: 100vw;
+    height: 20vh;
+
     .menu{//ul
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
 
-    .menu-item {//li
-        flex: 0 0 50px;
-
-    }
+    // .menu-item {//li
+    //     // flex: 0 0 50px;
+        
+    // }
 
     .menu-item a {//li a
+        font-size: var(--texte-taille-petite);
         color: #fff;
     }
 }

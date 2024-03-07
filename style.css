@@ -402,15 +402,15 @@ button:active {
 */
 .menu-principal-container {
   background-color: black;
+  width: 100vw;
+  height: 20vh;
 }
 .menu-principal-container .menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.menu-principal-container .menu-item {
-  flex: 0 0 50px;
-}
 .menu-principal-container .menu-item a {
+  font-size: var(--texte-taille-petite);
   color: #fff;
 }
