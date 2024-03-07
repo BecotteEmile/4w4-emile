@@ -19,7 +19,6 @@
         </svg>
     </label>
     <header class="menu__header">
-        <p>ligma balls</p>
         <?php wp_nav_menu(array("container" => "nav")) ?>
     </header>
     </div>
