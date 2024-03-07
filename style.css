@@ -450,6 +450,7 @@ button:active {
   }
 }
 
-#chk_burger:checked ~ p {
-  color: blue;
+#chk_burger:checked ~ .menu__header {
+  background-color: black;
+  color: black;
 }
