@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>thème du groupe 1</title>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/normalize.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div id="menu" class="global">
-        <header class="menu__header">
-            <?php wp_nav_menu(array("container" => "nav")) ?>
-        </header>
-    </div>
+<?php get_header(); ?>
     <div id="entete" class="global">
         <section class="entete_header hero">
             <h1>Thème du groupe 1 (h1)</h1>
@@ -23,11 +6,7 @@
             <h3>Tim - Collège de maisonneuve</h3>
             <button>Événement</button>
         </section>
-        <div class="vague vague-entete">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-            </svg>
-        </div>
+        <?php get_template_part('gabarits/vague') ?>
     </div>
     <div id="accueil" class="global">
         <section>

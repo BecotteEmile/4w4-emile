@@ -16,11 +16,11 @@
     transform: rotateY(180deg);
 }
 
-.vague-entete{
-    top: 99%;
+#entete .vague{
+    top: 100%;
 }
-.vague-entete .shape-fill {
-    fill: var(--couleur-arriere-entete);
+#entete .vague .remplissage {
+    fill: var(--_couleur-arriere-vague);
 }
 
 
@@ -34,5 +34,5 @@
 }
 
 .vague-footer .shape-fill{
-    fill: var(--couleur-arriere-galerie);
+    fill: var(--_couleur-arriere-vague);
 }

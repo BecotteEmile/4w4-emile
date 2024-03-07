@@ -14,6 +14,8 @@
     // --l-avant: 30%;
     
     //  Couleur Monochrome
+        --couleur-arriere-menu : hsl(var(--u1), 100%, 30%);
+
         --couleur-arriere-entete : hsl(var(--u1), 90%, 47%);
         --couleur-arriere-accueil : hsl(var(--u1), 90%, 37%);
         --couleur-arriere-evenement : hsl(var(--u1), 90%, 32%);
@@ -53,7 +55,16 @@
 
 .carte{
     --_couleur-arriere: hsl(var(--u1),100%, 85% );
+
     // Couleur boite
     --couleur-boite1 : hsl(var(--u1), 100%, 25%);
     --couleur-boite2 : hsl(var(--u1), 25%, 100%);
+}
+
+#entete{
+    --_couleur-arriere-vague :var(--couleur-arriere-entete); 
+}
+
+#footer{
+    --_couleur-arriere-vague :var(--couleur-arriere-galerie);
 }

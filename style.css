@@ -50,6 +50,7 @@ a img:hover {
   /*Calcul des teintes*/
   --u1:37;
   --u2: calc(var(--u1) + 180);
+  --couleur-arriere-menu: hsl(var(--u1), 100%, 30%);
   --couleur-arriere-entete: hsl(var(--u1), 90%, 47%);
   --couleur-arriere-accueil: hsl(var(--u1), 90%, 37%);
   --couleur-arriere-evenement: hsl(var(--u1), 90%, 32%);
@@ -82,6 +83,14 @@ a img:hover {
   --_couleur-arriere: hsl(var(--u1),100%, 85% );
   --couleur-boite1: hsl(var(--u1), 100%, 25%);
   --couleur-boite2: hsl(var(--u1), 25%, 100%);
+}
+
+#entete {
+  --_couleur-arriere-vague:var(--couleur-arriere-entete);
+}
+
+#footer {
+  --_couleur-arriere-vague:var(--couleur-arriere-galerie);
 }
 
 * {
@@ -118,6 +127,11 @@ body {
 
 #entete, #footer {
   min-height: 20vh;
+}
+
+#menu__entete {
+  position: relative;
+  background-color: var(--couleur-arriere-menu);
 }
 
 #entete {
@@ -327,12 +341,12 @@ button:active {
   transform: rotateY(180deg);
 }
 
-.vague-entete {
-  top: 99%;
+#entete .vague {
+  top: 100%;
 }
 
-.vague-entete .shape-fill {
-  fill: var(--couleur-arriere-entete);
+#entete .vague .remplissage {
+  fill: var(--_couleur-arriere-vague);
 }
 
 .vague-footer {
@@ -345,7 +359,7 @@ button:active {
 }
 
 .vague-footer .shape-fill {
-  fill: var(--couleur-arriere-galerie);
+  fill: var(--_couleur-arriere-vague);
 }
 
 .diagonale {
@@ -401,16 +415,41 @@ button:active {
     Feuille de style du menu principal
 */
 .menu-principal-container {
-  background-color: black;
-  width: 100vw;
-  height: 20vh;
+  overflow: visible;
 }
 .menu-principal-container .menu {
+  text-decoration: none;
   display: flex;
+  flex-direction: column;
+  transform: translateX(300%);
   justify-content: space-around;
   align-items: center;
+}
+@media (min-width: 700px) {
+  .menu-principal-container .menu {
+    transform: translateX(0);
+    flex-direction: row;
+    display: flex;
+    list-style-type: none;
+  }
 }
 .menu-principal-container .menu-item a {
   font-size: var(--texte-taille-petite);
   color: #fff;
+}
+
+#burger {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+@media (min-width: 700px) {
+  #burger {
+    display: none;
+  }
+}
+
+#chk_burger:checked ~ p {
+  color: blue;
 }
