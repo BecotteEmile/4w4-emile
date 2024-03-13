@@ -1,7 +1,70 @@
 :root {
-    --couleur-arriere-entete : #aaa;
-    --couleur-arriere-accueil : #0f0;
-    --couleur-arriere-evenement : #f00;
-    --couleur-arriere-galerie : #00f;
-    --couleur-arriere-footer : #fff;
+
+    /*Calcul des teintes*/
+    --u1 :37; // couleur initiale
+    --u2 : calc(var(--u1) + 180);//couleur complémentaire
+    // --u3 : calc(var(--u2) - 30);//couleur analogue gauche
+    // --u4 : calc(var(--u2) + 30);//couleur analogue droite
+
+    // /*Calcul de la saturation*/
+    // --s-arriere : 75%;
+    // --s-avant : 100%;
+    // /*Calcul de la luminosite*/
+    // --l-arriere: 50%;
+    // --l-avant: 30%;
+    
+    //  Couleur Monochrome
+        --couleur-arriere-menu : hsl(var(--u1), 100%, 30%);
+
+        --couleur-arriere-entete : hsl(var(--u1), 90%, 47%);
+        --couleur-arriere-accueil : hsl(var(--u1), 90%, 37%);
+        --couleur-arriere-evenement : hsl(var(--u1), 90%, 32%);
+        --couleur-arriere-galerie : hsl(var(--u1), 90%, 27%);
+        --couleur-arriere-footer : hsl(var(--u1), 90%, 47%);
+        
+        --couleur-arriere-diagonale : hsl(var(--u2), 90%, 32%);
+
+
+        --couleur-bouton1 : hsl(var(--u2), 100%, 73%);
+        --couleur-bouton2 : hsl(var(--u2), 100%, 52%);
+
+        --couleur-bouton1-hover : hsl(var(--u1), 100%, 73%);
+        --couleur-bouton2-hover : hsl(var(--u1), 100%, 52%);
+
+        --couleur-bouton-texte : hsl(var(--u1), 100%, 54%);
+        --couleur-bouton-texte-hover : hsl(var(--u2), 100%, 54%);
+
+        // Couleur monochrome
+        --couleur-avant-entete : hsl(var(--u1), 100%, 30%);
+        --couleur-avant-accueil : hsl(var(--u1), 100%, 75%);
+        --couleur-avant-evenement : hsl(var(--u1), 100%, 45%);
+        --couleur-avant-galerie : hsl(var(--u1), 100%, 40%);
+        --couleur-avant-footer : hsl(var(--u1), 100%, 30%);
+
+    --texte-taille-titre: clamp(2.5rem, 0.625rem + 6vw, 4.375rem);
+    --texte-taille-tres-grand: clamp(2.25rem, 1rem + 4vw, 3.5rem);
+    --texte-taille-grand: clamp(1.25rem, 0.5rem + 2.4vw, 2rem);
+    --texte-taille-moyen: clamp(1.125rem, 0.75rem + 1.2vw, 1.5rem);
+    --texte-taille-petit: clamp(1rem, 0.75rem + 0.8vw, 1.25rem);
+    --texte-taille-tres-petit: clamp(0.75rem, 0.5rem + 0.8vw, 1rem);
+
+    --hauteur-padding: 3rem;
+    --largeur-padding: 1rem;
+    --largeur-section: 1100px;
+}
+
+.carte{
+    --_couleur-arriere: hsl(var(--u1),100%, 85% );
+
+    // Couleur boite
+    --couleur-boite1 : hsl(var(--u1), 100%, 25%);
+    --couleur-boite2 : hsl(var(--u1), 25%, 100%);
+}
+
+#entete{
+    --_couleur-arriere-vague :var(--couleur-arriere-entete); 
+}
+
+#footer{
+    --_couleur-arriere-vague :var(--couleur-arriere-galerie);
 }

@@ -15,3 +15,25 @@ Text Domain: Theme-emile
 @import "_layout";
 
 @import "base/h";
+
+@import "base/liens";
+
+@import "base/bouton";
+
+@import "entete";
+
+/******************************************************************************/
+/*effet*/
+/******************************************************************************/
+
+@import "effet/vague";
+
+@import "effet/diagonale";
+
+/******************************************************************************/
+/*Composants*/
+/******************************************************************************/
+
+@import "composants/cours";
+
+@import "composants/menu";

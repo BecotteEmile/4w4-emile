@@ -1,0 +1,29 @@
+.cours{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.carte{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 0 calc(1100px/5);
+    // min-height: 60vh;
+    border-radius: 5px;
+    background-color: var(--couleur-boite1);
+    color: var(--couleur-boite2);
+    padding: 0.5rem;
+}
+
+#accueil .info-carte{
+    padding: 1rem;
+}
+
+#accueil .info-carte p{
+    margin: 0rem;
+    padding: 0.1rem;
+}

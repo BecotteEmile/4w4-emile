@@ -1,0 +1,38 @@
+.vague {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.vague svg {
+    position: relative;
+    display: block;
+    width: calc(120% + 1.3px);
+    height: 31px;
+    transform: rotateY(180deg);
+}
+
+#entete .vague{
+    top: 100%;
+}
+#entete .vague .remplissage {
+    fill: var(--_couleur-arriere-vague);
+}
+
+
+.vague-footer{
+    position: absolute;
+    top: -5%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.vague-footer .shape-fill{
+    fill: var(--_couleur-arriere-vague);
+}

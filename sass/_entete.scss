@@ -1,0 +1,30 @@
+.entete_header{
+    background-image: url("images/logo.png");
+    background-repeat: no-repeat;
+    background-position: 90% 35%;
+    background-size: 400px;
+}
+
+#entete h2{
+    width: 50vw;
+}
+
+@media screen and (max-width: 550px) {
+    .entete_header{
+        background-position: 50% 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #entete h2{
+        width: 80%;
+        text-align: center;
+    }
+    #entete button{
+        width: 70%;
+    }
+    #entete{
+        min-height: 50vh;
+    }
+}

@@ -1,0 +1,52 @@
+/*
+    Feuille de style du menu principal
+*/
+
+.menu-principal-container{
+    overflow: visible;
+    // width: 100vw;
+    // height: 20vh;
+
+    .menu{//ul
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(300%);
+        
+        @media(min-width: 700px){
+            transform: translateX(0);
+            flex-direction: row;
+            display: flex;
+            list-style-type: none;
+        }
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    // .menu-item {//li
+    //     // flex: 0 0 50px;
+        
+    // }
+
+    .menu-item a {//li a
+        font-size: var(--texte-taille-petite);
+        color: #fff;
+    }
+}
+
+// gestion label #burger l'image svg est dans un label
+#burger {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    @media(min-width: 700px){
+        display: none;
+    }
+}
+
+#chk_burger:checked ~ .menu__header{
+    background-color: black;
+    color: black;
+    // transform: translateX(0);
+}

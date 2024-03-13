@@ -1,0 +1,25 @@
+button{
+    font-size: var(--texte-taille-grand);
+    color: var(--couleur-bouton-texte);
+    background-image: linear-gradient(120deg, var(--couleur-bouton1), var(--couleur-bouton2));
+    margin-top: 1rem;
+    padding: 12px 24px;
+    border-radius: 10px;
+    box-shadow: 15px 10px 36px -8px #414141;
+    transition: color 1s, background-image 1s, transform 1s, box-shadow 1s;
+    transform: translateY(0px);
+}
+
+header button{
+    margin-top: 3rem;
+}
+button:hover{
+    transform: translateY(-5px);
+    box-shadow: 10px 5px 25px -8px #414141;
+}
+
+button:hover,
+button:active{
+    background-image: linear-gradient(120deg, var(--couleur-bouton1-hover), var(--couleur-bouton2-hover));
+    color: var(--couleur-bouton-texte-hover);
+}
