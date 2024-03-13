@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-    <h1>index</h1>
+    <h1>FRONT PAGE</h1>
     <div id="entete" class="global">
         <section class="entete_header hero">
             <h1>Thème du groupe 1 (h1)</h1>
@@ -25,19 +25,20 @@
                     if (have_posts()) :
                         while (have_posts()) : the_post();
                         $titre = get_the_title();
-                        $sigle = substr($titre,0,7);
+                        // $sigle = substr($titre,0,7);
 
-                        $positionDureeDebut = strpos($titre, '(');
-                        $positionDureeFin = strpos($titre, ')');
-                        $duree = substr($titre, $positionDureeDebut+1, -1);
-                        $titreMontre = substr($titre, 7, $positionDureeDebut -7);
+                        // $positionDureeDebut = strpos($titre, '(');
+                        // $positionDureeFin = strpos($titre, ')');
+                        // $duree = substr($titre, $positionDureeDebut+1, -1);
+                        // $titreMontre = substr($titre, 7, $positionDureeDebut -7);
                         ?>
 
                         <div class="carte">
                             <div class="info-carte">
-                                <h4><?= $sigle; ?></h4>
-                                <h3><?= $titreMontre; ?></h3> 
-                                <h5><?= $duree; ?></h5>
+                                <!-- <h4><?= $sigle; ?></h4> -->
+                                <!-- <h3><?= $titreMontre; ?></h3>  -->
+                                <h3><?= $titre; ?></h3> 
+                                <!-- <h5><?= $duree; ?></h5> -->
                             </div>
                             
                             <p><?php echo wp_trim_words(get_the_content(), 30); ?></p>
