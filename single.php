@@ -13,9 +13,6 @@
                         <div class="carte">
                             <div class="info-carte">
                                 <h3><?php the_title(); ?></h3> 
-                                <!-- <h4><?= $sigle; ?></h4> -->
-                                <!-- <h3><?= $titreMontre; ?></h3>  -->
-                                <!-- <h5><?= $duree; ?></h5> -->
                             </div>
                             <p><?php echo wp_trim_words(get_the_content(), 30); ?></p>
                         </div>

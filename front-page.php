@@ -14,26 +14,18 @@
             <h2>Accueil (h2)</h2>
             <div class="cours">
                 <?php
-                    // if (have_posts()) {
-                    //     while(have_posts()){
-                    //         the_post();
-                    //         the_title('<h3>', '</h3>');
-                    //         echo wp_trim_words(get_the_content(),30);
-                    //     }
-                    // }
-
                     if (have_posts()) :
                         while (have_posts()) : the_post();
                         $titre = get_the_title();
                         ?>
-
                         <div class="carte">
                             <div class="info-carte">
                                 <h3><?php the_title() ?></h3> 
-                                <a href="<?php the_permalink(); ?>">Suite</a>
                             </div>
                             
                             <p><?php echo wp_trim_words(get_the_content(), 30); ?></p>
+                            <!-- Ajout d'un permalien -->
+                            <a href="<?php the_permalink(); ?>">Suite</a>
                         </div>
                         <?php endwhile; ?>
                 <?php endif; ?>
