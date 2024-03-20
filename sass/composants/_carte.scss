@@ -1,4 +1,4 @@
-.cours{
+.destination{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -26,4 +26,11 @@
 #accueil .info-carte p{
     margin: 0rem;
     padding: 0.1rem;
+}
+
+
+.post-categories{// ul de la liste des categories
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
 }
