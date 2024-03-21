@@ -10,7 +10,10 @@ Text Domain: Theme-emile
 */
 @import "base/liens";
 
-@import "variables";
+
+/*Initialisation des variables Sass et css*/
+@import "utile/couleurs";
+@import "utile/couleurs-class";
 
 @import "_layout";
 
