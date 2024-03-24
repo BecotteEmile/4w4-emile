@@ -10,7 +10,8 @@
 
             <div class="categories">
                 <?php
-                foreach((get_categories()) as $category) :
+                $lesCategories = get_categories();
+                foreach($lesCategories as $category) :
                     $slug = $category->slug;
                     $nomCat = $category->name;
                     $description = $category->description;
