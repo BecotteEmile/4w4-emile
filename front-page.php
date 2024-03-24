@@ -6,6 +6,27 @@
             <h2><?= get_bloginfo("description"); ?></h2>
             <h3>Tim - Collège de maisonneuve</h3>
             <button>Événement</button>
+            
+            <?php
+                foreach((get_categories()) as $category) :
+                    $slug = $category->slug;
+                    $nomCat = $category->name;
+                    $description = $category->description;
+                    $nbArticles = $category->count;
+            ?>
+            <div class="carte">
+                <div class="info-carte">
+                    <h3><?= $nomCat; ?></h3> 
+                </div>
+                            
+                <p><?= wp_trim_words($description, 10); ?></p>
+                    <!-- Ajout d'un permalien -->
+                <p><?= $nbArticles; ?></p>
+                <a href="/4w4emile/category/<?= $slug; ?>/">Suite</a>
+            </div>
+            <?php endforeach?>
+
+
         </section>
         <?php get_template_part('gabarits/vague') ?>
     </div>
