@@ -3,7 +3,6 @@
         <section class="entete_header hero">
             <h1><?= get_bloginfo("name"); ?></h1>
             <h2><?= get_bloginfo("description"); ?></h2>
-            <h3>Tim - Collège de maisonneuve</h3>
             <button>Événement</button>
             
 
@@ -23,7 +22,7 @@
                 </div>          
                 <p><?= wp_trim_words($description, 10); ?></p>
                 <a href="/4w4emile/category/<?= $slug; ?>/">Suite...</a>
-                <p><?= $nbArticles; ?></p>
+                <p>nombres d'articles: <?= $nbArticles; ?></p>
             </div>
             <?php endforeach?>
             </div>

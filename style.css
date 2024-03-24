@@ -585,7 +585,7 @@ button:active {
 }
 
 .post-categories li {
-  background-color: hsl(40, 100%, 30%);
+  background-color: hsl(40, 100%, 40%);
   border-radius: 10px;
   padding: 0.25rem;
 }
