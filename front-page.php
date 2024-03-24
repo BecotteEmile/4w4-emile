@@ -22,7 +22,7 @@
                     <h3><?= $nomCat; ?></h3> 
                 </div>          
                 <p><?= wp_trim_words($description, 10); ?></p>
-                <a href="/4w4emile/category/<?= $slug; ?>/">Suite</a>
+                <a href="/4w4emile/category/<?= $slug; ?>/">Suite...</a>
                 <p><?= $nbArticles; ?></p>
             </div>
             <?php endforeach?>
@@ -49,7 +49,7 @@
                             <p><?php echo wp_trim_words(get_the_content(), 30); ?></p>
                             <?php the_category(); ?>
                             <!-- Ajout d'un permalien -->
-                            <a href="<?php the_permalink(); ?>">Suite</a>
+                            <a href="<?php the_permalink(); ?>">Suite...</a>
                         </div>
                         <?php endwhile; ?>
                 <?php endif; ?>
