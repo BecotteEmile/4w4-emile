@@ -552,7 +552,7 @@ button:active {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 1rem;
-  align-items: flex-start;
+  align-items: stretch;
   flex-direction: row;
 }
 
