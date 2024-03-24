@@ -539,6 +539,14 @@ button:active {
 /******************************************************************************/
 /*Composants*/
 /******************************************************************************/
+.categories {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .destination {
   display: flex;
   flex-wrap: wrap;

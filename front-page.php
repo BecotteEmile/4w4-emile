@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-    <h1>FRONT PAGE</h1>
     <div id="entete" class="global">
         <section class="entete_header hero">
             <h1><?= get_bloginfo("name"); ?></h1>
@@ -7,7 +6,10 @@
             <h3>Tim - Collège de maisonneuve</h3>
             <button>Événement</button>
             
-            <?php
+
+
+            <div class="categories">
+                <?php
                 foreach((get_categories()) as $category) :
                     $slug = $category->slug;
                     $nomCat = $category->name;
@@ -17,14 +19,13 @@
             <div class="carte">
                 <div class="info-carte">
                     <h3><?= $nomCat; ?></h3> 
-                </div>
-                            
+                </div>          
                 <p><?= wp_trim_words($description, 10); ?></p>
-                    <!-- Ajout d'un permalien -->
-                <p><?= $nbArticles; ?></p>
                 <a href="/4w4emile/category/<?= $slug; ?>/">Suite</a>
+                <p><?= $nbArticles; ?></p>
             </div>
             <?php endforeach?>
+            </div>
 
 
         </section>
